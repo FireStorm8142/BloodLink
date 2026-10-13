@@ -5,3 +5,12 @@
 @media(max-width:1050px){.stats{grid-template-columns:repeat(2,1fr)}.grid,.bottomGrid{grid-template-columns:1fr}.sidePanel{order:-1}}
 @media(max-width:760px){.sidebar{position:fixed;z-index:10;inset:0 auto 0 0;transform:translateX(-100%);transition:.2s;width:250px}.sidebar.open{transform:translateX(0)}.closeBtn{display:block}.menuBtn{display:block}.topbar{padding:0 16px}.bankSelect{display:none}.content{padding:22px 16px 30px}.pageIntro{align-items:flex-start;gap:14px;flex-direction:column}.actions{width:100%}.actions button{flex:1;justify-content:center}.stats{grid-template-columns:1fr 1fr}.stat{padding:13px}.stat strong{font-size:17px}.search{width:150px}}
 @media(max-width:460px){.stats{grid-template-columns:1fr}.panelHead{align-items:flex-start;gap:10px;flex-direction:column}.search{width:100%}}
+
+/* Small practical additions for live data states */
+.dot.offline{background:var(--amber);box-shadow:0 0 0 3px rgba(240,184,75,.1)}
+.errorBanner{display:flex;align-items:center;gap:10px;margin:18px 34px 0;padding:12px 14px;border:1px solid rgba(241,91,106,.3);border-radius:6px;background:rgba(241,91,106,.07);color:#f3a0a7;font-size:11px}
+.errorBanner span{flex:1;min-width:0;overflow-wrap:anywhere}.errorBanner button{border:1px solid #65353b;border-radius:4px;background:#211519;color:#f3b5bb;padding:6px 9px;cursor:pointer}
+.emptyCell{text-align:center!important;padding:28px 14px!important;color:var(--muted)!important}.emptyText{padding:14px 16px;color:var(--muted);font-size:10px;line-height:1.5}.emptyText.padded{padding:24px 16px}
+.status.expired,.status.discarded{background:rgba(241,91,106,.1);color:#f18b95}.status.issued{background:rgba(139,148,158,.12);color:#aab2bc}.spin{animation:spin .9s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.settingsLine{font-size:10px;overflow-wrap:anywhere}.setupScreen{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--bg)}.setupCard{width:min(100%,520px);padding:28px;background:var(--panel);border:1px solid var(--border);border-radius:8px}.setupCard h1{font-size:20px;margin:18px 0 10px}.setupCard p{font-size:12px;color:var(--muted);line-height:1.6}.setupCard pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:13px;background:#0b0f14;border:1px solid var(--border);border-radius:5px;font-size:11px;color:#b7e9d0}.setupCard code{color:#b7e9d0}button:disabled{opacity:.6;cursor:wait}
+@media(max-width:760px){.errorBanner{margin:14px 16px 0}}
